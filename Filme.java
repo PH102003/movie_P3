@@ -35,6 +35,7 @@ public class Filme {
     public void setValor(double valor) {
         this.valor = valor;
     }
+    
     //metodos
     
 }

@@ -47,9 +47,15 @@ public class Bilhete {
     }
     //metodo
     public double calcularValor(){
-        double calculo = getValor();
-        return calculo;
+        return getValor();
+
+    }   
+    public void imprimirBilhete(){
+        System.out.println(getCPF(), getFilme(), getSala(), getSessao(), getValor()); 
     }
+    
+    
+
 
     }
 

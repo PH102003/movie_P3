@@ -3,12 +3,11 @@ package classes;
 public class Compra {
     private double valorPipoca;
     private double CocaCola;
-    private int numsBilhetes;
     
-    public Compra(String valorPipoca, String cocaCola, int numsBilhetes) {
+    
+    public Compra(String valorPipoca, String cocaCola ) {
         this.valorPipoca = valorPipoca;
         CocaCola = cocaCola;
-        this.numsBilhetes = numsBilhetes;
     }
 
     public String getValorPipoca() {
@@ -23,28 +22,38 @@ public class Compra {
     public void setCocaCola(String cocaCola) {
         CocaCola = cocaCola;
     }
-    public int getNumsBilhetes() {
-        return numsBilhetes;
-    }
-    public void setNumsBilhetes(int numsBilhetes) {
-        this.numsBilhetes = numsBilhetes;
-    }
-    
     //metodos
     public double pegarItens(int quantiCoca, int quantiPipoca){
         double resultadoItens = valorPipoca * quantiPipoca + CocaCola * quantiCoca;
         return resultadoItens;
     }
-    public double valorBilhete(int quantidadeBilhetes){
-        double soma = quantidadeBilhetes * 20;
-        return soma;
-
+    public double valorBilhete(double numsBilhetes){
+        return numsBilhetes * 20;
+        
     }  
-    public double valorFinal(){
-        double somaTotal = pegarItens(numsBilhetes, numsBilhetes) + valorBilhete(numsBilhetes);
-        return somaTotal;
+    public void valorFinal(double numsBilhetes){
+        double somaTotal = pegarItens(CocaCola, valorPipoca)  + valorBilhete(numsBilhetes);
+        System.out.println("Preço total:" + somaTotal);
+        
     }
-}
+    
+    public void quantidadeDeBilhetes(){
+
+
+
+      Bilhete quantidade = new Bilhete();
+      if(quantidade != null){
+        quantidade++;
+      }
+      
+
+
+    }
+    }
+    
+    
+
+
 /*
  A classe compra é a classe que contém as compras que podem ser realizadas,  a
 compra pode conter itens como pipoca, refrigerante, chocolate ou qualquer outro
