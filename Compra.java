@@ -36,6 +36,7 @@ public class Compra {
         System.out.println("Preço total:" + somaTotal);
         
     }
+<<<<<<< HEAD
     
     public void quantidadeDeBilhetes(){
 
@@ -71,44 +72,7 @@ caso seja
 comprado o sistema dará sugestões de cadeiras que estejam juntas para que todos
 possam se sentar juntos.
  */
+=======
+}
+>>>>>>> d804dd732466ea2f5c221c57b69b268c025571e5
 
- /*
-  import java.util.ArrayList;
-import java.util.List;
-
-public class Compra {
-    private List<Bilhete> bilhetes;
-    private List<ItemCompra> itensCompra;
-
-    public Compra() {
-        this.bilhetes = new ArrayList<>();
-        this.itensCompra = new ArrayList<>();
-    }
-
-    public List<Bilhete> getBilhetes() {
-        return bilhetes;
-    }
-
-    public List<ItemCompra> getItensCompra() {
-        return itensCompra;
-    }
-
-    public void adicionarBilhete(Bilhete bilhete) {
-        bilhetes.add(bilhete);
-    }
-
-    public void adicionarItemCompra(ItemCompra item) {
-        itensCompra.add(item);
-    }
-
-    public double calcularValorTotal() {
-        double valorTotal = 0;
-        for (Bilhete bilhete : bilhetes) {
-            valorTotal += bilhete.getValor();
-        }
-        for (ItemCompra item : itensCompra) {
-            valorTotal += item.getValorTotal();
-        }
-        return valorTotal;
-    }
-  */
